@@ -1,0 +1,86 @@
+/* setup */
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  font-family: monospace;
+  text-align: center;
+}
+
+div[class] {
+  font-size: 3rem;
+  display: flex;
+  overflow: auto;
+  flex: none;
+}
+
+.x {
+  width: 50%;
+  min-width: 15rem;
+  height: 6rem;
+  flex-flow: row nowrap;
+}
+
+.y {
+  width: 30%;
+  min-width: 12rem;
+  height: 12rem;
+  flex-flow: column nowrap;
+}
+
+div > div {
+  flex: none;
+  outline: 1px solid #333;
+}
+
+.x > div {
+  width: 90%;
+  height: 100%;
+}
+
+.y > div {
+  width: 100%;
+  height: 80%;
+}
+
+/* coloration */
+div > div:nth-child(even) {
+  background-color: #87ea87;
+}
+
+div > div:nth-child(odd) {
+  background-color: #87ccea;
+}
+
+/* setting up mandatory scroll-snap on parent */
+.x.mandatory-scroll-snapping {
+  scroll-snap-type: x mandatory;
+}
+
+.y.mandatory-scroll-snapping {
+  scroll-snap-type: y mandatory;
+}
+
+/* defining scroll-snap alignment on children */
+div > div {
+  scroll-snap-align: center;
+}
+
+/* defining scroll-snap stop on children */
+.always-stop > div {
+  scroll-snap-stop: always;
+}
+
+.always-stop-odd > div:nth-of-type(odd) {
+  scroll-snap-stop: always;
+}
+
+.always-stop-even > div:nth-of-type(even) {
+  scroll-snap-stop: always;
+}
+
+.normal-stop > div {
+  scroll-snap-stop: normal;
+}

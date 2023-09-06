@@ -1,18 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./scroll-margin.css">
+    <!-- <link rel="stylesheet" href="./scroll-margin.css"> -->
+    <link rel="stylesheet" href="./scroll-snap-stop.css">
 </head>
+
 <body>
-    <div class="scroller">
+    <!-- SCROLL MARGIN -->
+    <!-- <div class="scroller">
         <div>1</div>
         <div>2</div>
         <div>3</div>
         <div>4</div>
-      </div>
-      
+      </div> -->
+    <!-- scroll-snap-stop -->
+    <p>scroll-snap-stop: always (X Mandatory)</p>
+    <div class="x mandatory-scroll-snapping always-stop">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <p>scroll-snap-stop: always (X Mandatory) on odd child elements</p>
+    <div class="x mandatory-scroll-snapping always-stop-odd">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <p>scroll-snap-stop: always (X Mandatory) on even child elements</p>
+    <div class="x mandatory-scroll-snapping always-stop-even">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <p>scroll-snap-stop: normal (X Mandatory)</p>
+    <div class="x mandatory-scroll-snapping normal-stop">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <p>scroll-snap-stop: always (Y Mandatory)</p>
+    <div class="y mandatory-scroll-snapping always-stop">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <p>scroll-snap-stop: normal (Y Mandatory)</p>
+    <div class="y mandatory-scroll-snapping normal-stop">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
 </body>
+
 </html>

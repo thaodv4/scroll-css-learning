@@ -1,6 +1,6 @@
 .scroller {
     text-align: left;
-    width: 400px;
+    width: 500px;
     height: 250px;
     overflow-x: scroll;
     display: flex;
